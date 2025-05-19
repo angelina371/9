@@ -1,0 +1,44 @@
+from turtle import*
+import random
+colors = ['red', 'green', 'blue', 'yellow', 'purple']
+def малюй_коло(радіус, x, y):
+    up()  
+    goto(x, y)  
+    down()  
+    color(random.choice(colors)) 
+    circle(радіус) 
+    up()
+малюй_коло(30, 0, 0)
+малюй_коло(60, 70, 50)
+малюй_коло(90, 200, 120)
+done()
+
+
+
+from turtle import *
+import random
+colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple']
+def малюй_квадрат(сторона):
+    pencolor(random.choice(colors))
+    down()
+    for _ in range(4):
+        forward(сторона)
+        left(90)
+    up()
+малюй_квадрат(100)
+done()
+
+
+
+from turtle import *
+import random
+colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple']
+def малюй_шестикутник(сторона):
+    down()
+    for _ in range(6):
+        pencolor(random.choice(colors))
+        forward(сторона)
+        left(60)
+    up()
+малюй_шестикутник(100)
+done()
